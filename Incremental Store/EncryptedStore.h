@@ -5,7 +5,6 @@
 //
 //
 
-#import <sqlite3.h>
 #import <objc/runtime.h>
 #import <CoreData/CoreData.h>
 
@@ -21,6 +20,8 @@ extern NSString * const EncryptedStoreErrorDomain;
 extern NSString * const EncryptedStoreErrorMessageKey;
 extern NSString * const EncryptedStoreDatabaseLocation;
 extern NSString * const EncryptedStoreCacheSize;
+
+typedef struct sqlite3_stmt sqlite3_stmt;
 
 typedef NS_ENUM(NSInteger, EncryptedStoreError)
 {
