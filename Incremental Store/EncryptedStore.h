@@ -55,6 +55,6 @@ typedef NS_ENUM(NSInteger, EncryptedStoreError)
               forKey:(NSString *)key
          toStatement:(sqlite3_stmt *)statement
              atIndex:(int)index;
-
++(void)registerStoreClass;
 
 @end

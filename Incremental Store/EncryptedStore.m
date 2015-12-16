@@ -170,7 +170,7 @@ static NSString * const EncryptedStoreMetadataTableName = @"meta";
     return [self makeStoreWithOptions:options managedObjectModel:objModel error:error];
 }
 
-+ (void)loadStore {
++ (void)registerStoreClass {
     @autoreleasepool {
         [NSPersistentStoreCoordinator
          registerStoreClass:[EncryptedStore class]
